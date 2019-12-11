@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "./.tsbuild/",
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "strictPropertyInitialization": true,
+      "esModuleInterop": true,
+      "strictNullChecks": true,
+      "module": "commonjs",
+      "target": "es2017",
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "removeComments": true,
+      "types": [
+        "node",
+        "inputmask",
+        "select2",
+        "jquery.validation",
+        "@wdio/sync"
+      ],
+      "paths": {
+        "@test/*": [
+          "./tests/*"
+        ],
+        "@src/*": [
+          "./src/*"
+        ]
+      },
+      "typeRoots": [
+        "./node_modules/@types/",
+        "./src/types"
+      ]
+    },
+    "include": [
+      "./src/**/*.ts"
+    ]
+  }
+  
